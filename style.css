@@ -1,17 +1,11 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 100px 300px;
-
+    padding: 120px 300px;
     background-image: url("images/fundo.png");
-    /* caminho da imagem */
     background-size: cover;
-    /* cobre a tela inteira */
     background-position: center;
-    /* centraliza a imagem */
     background-repeat: no-repeat;
-    /* não repete a imagem */
     background-attachment: fixed;
-
 }
 
 .navbar {
@@ -24,6 +18,8 @@ body {
     margin: 20px auto;
     max-width: 600px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    /* para evitar quebra feia no celular */
 }
 
 .navbar a {
@@ -33,7 +29,6 @@ body {
     font-size: 18px;
     transition: color 0.3s;
 }
-
 
 .navbar a:hover {
     color: #0077cc;
@@ -86,5 +81,37 @@ img.logo {
     height: 24px;
     margin-right: 8px;
     pointer-events: none;
-    /* faz só o texto clicável */
+}
+
+/* --- MEDIA QUERY: Ajuste para telas pequenas --- */
+@media (max-width: 768px) {
+    body {
+        padding: 40px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        max-width: 100%;
+    }
+
+    .profile_picture {
+        width: 120px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    .links a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
 }
