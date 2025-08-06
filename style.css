@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 100px 300px;
+
+    background-image: url("images/fundo.png");
+    /* caminho da imagem */
+    background-size: cover;
+    /* cobre a tela inteira */
+    background-position: center;
+    /* centraliza a imagem */
+    background-repeat: no-repeat;
+    /* não repete a imagem */
+    background-attachment: fixed;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgba(190, 190, 190, 0.8);
+    padding: 12px 0;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+
+.navbar a:hover {
+    color: #0077cc;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #0077cc;
+}
+
+.box {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.title {
+    text-align: center;
+}
+
+.profile_picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.last_text {
+    text-align: center;
+    color: rgb(139, 139, 139);
+    font-size: 12px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(175, 175, 175);
+    margin: 20px 0;
+}
+
+img.logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    pointer-events: none;
+    /* faz só o texto clicável */
+}
