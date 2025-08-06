@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 120px 300px;
+    padding: 120px 15vw;
     background-image: url("images/fundo.png");
     background-size: cover;
     background-position: center;
@@ -86,7 +86,7 @@ img.logo {
 /* --- MEDIA QUERY: Ajuste para telas pequenas --- */
 @media (max-width: 768px) {
     body {
-        padding: 40px 20px;
+        padding: 40px 15vw;
     }
 
     .navbar {
